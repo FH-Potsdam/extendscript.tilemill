@@ -1,6 +1,5 @@
-(function(thisObj) {
 
-/*! extendscript.tilemill.jsx - v0.3.0 - 2014-05-14 */
+/*! extendscript.tilemill.jsx - v0.3.1 - 2014-05-14 */
 //
 // extendscript.tilemill
 // https://github.com/fabiantheblind/extendscript.tilemill
@@ -42,7 +41,7 @@ var settings = {
   use_textframe:true,
   use_marker:true,
   possible_lat_keys : ["latitude","Latitude","LATITUDE","lat", "Lat","LAT"],
-  possible_lon_keys : ["longitude","Longitude","LONGITUDE","lon", "Lon","LON","lng", "Lng","LNG"],
+  possible_lon_keys : ["longitude","Longitude","LONGITUDE","lon", "Lon","LON"],
   /**
    * orientation possibilites are:
    * DEFAULT
@@ -894,23 +893,23 @@ var msg_row_four = d_col_one.dialogRows.add(); // pt 4
 var msgpt1 = msg_row_one.staticTexts.add({
   minWidth: 200,
   staticLabel: "Paste the values you used in tilemill to create your bounding box.",
-  //staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
+  staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
 });
 var msgpt2 = msg_row_two.staticTexts.add({
   minWidth: 200,
   staticLabel: "e.g. -120,-45,120,45 is ordered like this:",
-  //staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
+  staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
 });
 var msgpt3 = msg_row_three.staticTexts.add({
   minWidth: 200,
   staticLabel: "[min lon, min lat, max lon, max lat]",
-  //staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
+  staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
 });
 
 var msgpt4 = msg_row_four.staticTexts.add({
   minWidth: 200,
   staticLabel: "Then select the value for the TextFrame",
-  //staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
+  staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
 });
 
 // end of message
@@ -927,7 +926,7 @@ var dd_row = d_col_two.dialogRows.add(); // dropdown
 
 var label_min_lon = min_lon_row.staticTexts.add({
   staticLabel: "min lon:",
-  //staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
+  staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
   minWidth: 70,
 });
 /**
@@ -947,7 +946,7 @@ var min_lon_box = min_lon_row.realEditboxes.add({
 // label
 var label_min_lat = min_lat_row.staticTexts.add({
   staticLabel: "min lat:",
-  //staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
+  staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
   minWidth: 70,
 });
 // box
@@ -961,7 +960,7 @@ var min_lat_box = min_lat_row.realEditboxes.add({
 // label
 var label_max_lon = max_lon_row.staticTexts.add({
   staticLabel: "max lon:",
-  //staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
+  staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
   minWidth: 70,
 });
 // box
@@ -975,7 +974,7 @@ var max_lon_box = max_lon_row.realEditboxes.add({
 // label
 var label_max_lat = max_lat_row.staticTexts.add({
   staticLabel: "max lat:",
-  //staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
+  staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
   minWidth: 70,
 });
 // box
@@ -989,7 +988,7 @@ var max_lat_box = max_lat_row.realEditboxes.add({
 // label for the dropdown
 var dd_label = dd_label_row.staticTexts.add({
   staticLabel: "TextFrame Contents",
-  //staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
+  staticAlignment: StaticAlignmentOptions.LEFT_ALIGN,
   minWidth: 70,
 });
 // dropdown
@@ -1123,4 +1122,3 @@ draw();// run it
 ////////////////////////
 ///END OF MAIN.JSX
 ////////////////////////
-})(this);
