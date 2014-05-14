@@ -42,7 +42,7 @@ var settings = {
   use_textframe:true,
   use_marker:true,
   possible_lat_keys : ["latitude","Latitude","LATITUDE","lat", "Lat","LAT"],
-  possible_lon_keys : ["longitude","Longitude","LONGITUDE","lon", "Lon","LON"],
+  possible_lon_keys : ["longitude","Longitude","LONGITUDE","lon", "Lon","LON","lng", "Lng","LNG"],
   /**
    * orientation possibilites are:
    * DEFAULT
